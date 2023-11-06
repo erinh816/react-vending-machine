@@ -1,15 +1,19 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Nav from "./Nav";
-import RoutesList from "./RouteList";
+import { Link } from "react-router-dom";
 
 function VendingMachine() {
 
   return (
     <div>
-      <BrowserRouter>
-        <Nav />
-        <RoutesList />
-      </BrowserRouter>
+      <h1>I am a vending machine.</h1>
+      <li>
+        <Link to="/snickers">Snickers</Link>
+      </li>
+      <li>
+        <Link to="/cookies">Cookies</Link>
+      </li>
+      <li>
+        <Link to="/gummy-worms">Gummy Worms</Link>
+      </li>
     </div>
   );
 
